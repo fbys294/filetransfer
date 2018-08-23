@@ -1,0 +1,9 @@
+---
+applications:
+- name: filetransfer
+  memory: 128M
+  instances: 1
+  buildpack: go_buildpack
+  command: cf_filetransfer
+  env:
+     GOPACKAGENAME: cf_filetransfer
